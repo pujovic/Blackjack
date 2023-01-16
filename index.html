@@ -1,44 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Blackjack</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Blackjack</h1>
     <p id="message-el">Place your bet</p>
 
     <div class="cards">
+      <div id="player-div">
+        <h2>Player</h2>
         <div class="player">
-            <p id="cards-el">Player's cards:</p>
-            <p id="sum-el">Player's sum:</p>
+          <img
+            id="player-first-card"
+            src="./cards/redBack.webp"
+            alt="Player's first card"
+            width="100px"
+            height="155.633px"
+          />
+          <img
+            id="player-second-card"
+            src="./cards/redBack.webp"
+            alt="Player's second card"
+            width="100px"
+            height="155.633px"
+          />
         </div>
-    
+        <p id="sum-el">Player's sum:</p>
+      </div>
+
+      <div id="dealer-div">
+        <h2>Dealer</h2>
         <div class="dealer">
-            <p id="dealer-cards">Dealer's cards:</p>
-            <p id="dealer-sum">Dealer's sum: ?</p>
-        </div>   
-    </div>
-    
-    <p id="bet-el">Bet:</p>
-    
-    <div class="buttons">
-        <button onclick="startGame()">DEAL</button>
-        <button onclick="newCard()">HIT</button>
-        <button onclick="stand()">STAND</button>
+          <img
+            id="dealer-first-card"
+            src="./cards/blueBack.webp"
+            alt="Dealer's first card"
+            width="100px"
+            height="155.633px"
+          />
+          <img
+            id="dealer-second-card"
+            src="./cards/blueBack.webp"
+            alt="Dealer's second card"
+            width="100px"
+            height="155.633px"
+          />
+        </div>
+        <p id="dealer-sum">Dealer's sum: ?</p>
+      </div>
     </div>
 
+    <div class="buttons">
+      <button onclick="startGame()">DEAL</button>
+      <button onclick="newCard()">HIT</button>
+      <button onclick="stand()">STAND</button>
+    </div>
+
+    <p id="bet-el">Bet:</p>
+
     <div class="chips">
-        <img class="chip" id="10" src="images/chip-10.png" alt="betting chip $10">
-        <img class="chip" id="20" src="images/chip-20.png" alt="betting chip $20">
-        <img class="chip" id="50" src="images/chip-50.png" alt="betting chip $50">
-        <img class="chip" id="100" src="images/chip-100.png" alt="betting chip $100">
+      <img
+        class="chip"
+        id="10"
+        src="images/chip-10.png"
+        alt="betting chip $10"
+        width="100px"
+        height="100px"
+      />
+      <img
+        class="chip"
+        id="20"
+        src="images/chip-20.png"
+        alt="betting chip $20"
+        width="100px"
+        height="100px"
+      />
+      <img
+        class="chip"
+        id="50"
+        src="images/chip-50.png"
+        alt="betting chip $50"
+        width="100px"
+        height="100px"
+      />
+      <img
+        class="chip"
+        id="100"
+        src="images/chip-100.png"
+        alt="betting chip $100"
+        width="100px"
+        height="100px"
+      />
     </div>
 
     <p id="player-el"></p>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

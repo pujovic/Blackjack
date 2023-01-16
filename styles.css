@@ -1,69 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+}
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+html {
+  height: 100%;
+}
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
-    background-image: url("images/background.jpg");
-    background-size: cover;
-    font-weight: bold;
-    color: white;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
+    sans-serif;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0;
+  min-height: 100%;
 }
 
 h1 {
-    color: goldenrod;
+  color: goldenrod;
+  margin: 0.3rem;
 }
 
 #message-el {
-    font-style: italic;
+  font-style: italic;
+  margin: 0.2rem;
+  color: rgb(132, 255, 75);
+  font-size: 1.2rem;
 }
 
 button {
-    color: #016f32;
-    width: 25%;
-    background: rgb(248, 191, 45);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    border: none;
-    border-radius: 2px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    transition-duration: 0.4s;
+  color: #016f32;
+  width: 25%;
+  background: rgb(248, 191, 45);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.4s;
 }
 button:hover {
-    background: rgb(179, 135, 24);
-    color: #2fe06a;
-    cursor: pointer;
+  background: rgb(179, 135, 24);
+  color: #2fe06a;
+  cursor: pointer;
 }
 
-.cards, .buttons     {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 70%;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
-.player, .dealer {text-align: left;}
+.player,
+.dealer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 450px;
+  flex-wrap: wrap;
+}
 
 .chips {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
 }
 .chip {
-    opacity: 0.7;
-    max-width: 20%;
+  opacity: 0.7;
 }
 .chip:hover {
-    cursor: pointer;
-    opacity: 1;
+  cursor: pointer;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 800px) {
-    .chips, .cards, .buttons {
-        width: 100%
-    }
+  .chips,
+  .cards,
+  .buttons {
+    width: 100%;
+  }
 }
