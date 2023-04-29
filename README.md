@@ -1,6 +1,6 @@
 # Blackjack
 
-![](.images/screenshot.png)
+![](./images/Screenshot.png)
 
 #### Description:
 
